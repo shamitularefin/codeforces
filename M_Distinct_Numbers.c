@@ -13,12 +13,19 @@ int main() {
     int duplicate = 0;
 
     for (int i = 0; i < n; i++) {
+
         for (int j = 0; j < i; j++) {
+
             if (a[i] == a[j]) {
+
                 duplicate++;
+
                 break;
+
             }
+
         }
+        
     }
 
     printf("%d\n", n - duplicate);
